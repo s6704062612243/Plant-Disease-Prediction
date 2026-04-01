@@ -102,7 +102,7 @@ with tab1:
         
         col1, col2 = st.columns(2)
         with col1:
-            st.metric("ผลการทำนาย", "โรค" if pred == 1 else "ไม่มีโรค")
+            st.metric("ผลการทำนาย", "มีโรค" if pred == 1 else "ไม่มีโรค")
         with col2:
             status = "แบบจำลอง Demo" if model is None else "แบบจำลองจริง"
             st.metric("สถานะ", status)
@@ -153,10 +153,10 @@ with tab2:
             
             col1, col2, col3 = st.columns(3)
             with col1:
-                pred_text = "โรค" if pred == 1 else "ไม่มีโรค"
+                pred_text = "มีโรค" if pred == 1 else "ไม่มีโรค"
                 st.metric("ผลการทำนาย", pred_text)
             with col2:
-                actual_text = "โรค" if actual == 1 else "ไม่มีโรค"
+                actual_text = "มีโรค" if actual == 1 else "ไม่มีโรค"
                 st.metric("ผลจริง", actual_text)
             with col3:
                 if pred == actual:
