@@ -177,7 +177,7 @@ with tab2:
             
             col1, col2 = st.columns(2)
             with col1:
-                st.image(image, caption=selected_row["file_name"], use_container_width=True)
+                st.image(image, caption=str(selected_row["file_name"]), use_column_width=True)
             with col2:
                 st.write(f"**รูป {selected_idx + 1} จาก {len(filtered_df)}**")
                 st.success(f"จริง:\n{class_labels.get(selected_row['class_name'])}")
