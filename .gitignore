@@ -24,8 +24,5 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Project specific - excluded large folders only
-data/
-models/
+# Exclude only training notebooks cache
 .ipynb_checkpoints/
-*.ipynb
