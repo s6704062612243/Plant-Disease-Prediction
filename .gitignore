@@ -24,8 +24,8 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Project specific
-*.pkl
-*.pth
-*.h5
+# Project specific - excluded large folders only
+data/
+models/
 .ipynb_checkpoints/
+*.ipynb
